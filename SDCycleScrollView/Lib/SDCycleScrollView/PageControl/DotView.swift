@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DotView : UIView, ActivityStateChangable {
+class DotView : UIView {
     init() {
         super.init(frame: CGRectZero)
         setup()
@@ -19,7 +19,7 @@ class DotView : UIView, ActivityStateChangable {
         setup()
     }
 
-    override init(frame: CGRect) {
+    required override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }

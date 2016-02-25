@@ -31,7 +31,6 @@
 
 #import "SDCycleScrollView.h"
 #import "SDCycleScrollView-Swift.h"
-#import "TAPageControl.h"
 #import "UIImageView+WebCache.h"
 #import "SDImageCache.h"
 
@@ -166,8 +165,8 @@ NSString * const ID = @"cycleCell";
 {
     _pageControlDotSize = pageControlDotSize;
     [self setupPageControl];
-    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
-        TAPageControl *pageContol = (TAPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[PageControl class]]) {
+        PageControl *pageContol = (PageControl *)_pageControl;
         pageContol.dotSize = pageControlDotSize;
     }
 }
@@ -182,8 +181,8 @@ NSString * const ID = @"cycleCell";
 - (void)setCurrentPageDotColor:(UIColor *)currentPageDotColor
 {
     _currentPageDotColor = currentPageDotColor;
-    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
-        TAPageControl *pageControl = (TAPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[PageControl class]]) {
+        PageControl *pageControl = (PageControl *)_pageControl;
         pageControl.dotColor = currentPageDotColor;
     } else {
         UIPageControl *pageControl = (UIPageControl *)_pageControl;
@@ -220,8 +219,8 @@ NSString * const ID = @"cycleCell";
 {
     if (!image || !self.pageControl) return;
     
-    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
-        TAPageControl *pageControl = (TAPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[PageControl class]]) {
+        PageControl *pageControl = (PageControl *)_pageControl;
         if (isCurrentPageDot) {
             pageControl.currentDotImage = image;
         } else {
@@ -327,7 +326,7 @@ NSString * const ID = @"cycleCell";
     switch (self.pageControlStyle) {
         case SDCycleScrollViewPageContolStyleAnimated:
         {
-            TAPageControl *pageControl = [[TAPageControl alloc] init];
+            PageControl *pageControl = [[PageControl alloc] init];
             pageControl.numberOfPages = self.imagePathsGroup.count;
             pageControl.dotColor = self.currentPageDotColor;
             pageControl.userInteractionEnabled = NO;
@@ -412,8 +411,8 @@ NSString * const ID = @"cycleCell";
     }
     
     CGSize size = CGSizeZero;
-    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
-        TAPageControl *pageControl = (TAPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[PageControl class]]) {
+        PageControl *pageControl = (PageControl *)_pageControl;
         size = [pageControl sizeForNumberOfPages:self.imagePathsGroup.count];
     } else {
         size = CGSizeMake(self.imagePathsGroup.count * self.pageControlDotSize.width * 1.2, self.pageControlDotSize.height);
@@ -424,8 +423,8 @@ NSString * const ID = @"cycleCell";
     }
     CGFloat y = self.mainView.sd_height - size.height - 10;
     
-    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
-        TAPageControl *pageControl = (TAPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[PageControl class]]) {
+        PageControl *pageControl = (PageControl *)_pageControl;
         [pageControl sizeToFit];
     }
     
@@ -516,8 +515,8 @@ NSString * const ID = @"cycleCell";
     if (!self.imagePathsGroup.count) return; // 解决清除timer时偶尔会出现的问题
     int indexOnPageControl = itemIndex % self.imagePathsGroup.count;
     
-    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
-        TAPageControl *pageControl = (TAPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[PageControl class]]) {
+        PageControl *pageControl = (PageControl *)_pageControl;
         pageControl.currentPage = indexOnPageControl;
     } else {
         UIPageControl *pageControl = (UIPageControl *)_pageControl;

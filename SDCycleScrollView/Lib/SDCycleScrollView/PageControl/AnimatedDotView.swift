@@ -8,8 +8,8 @@
 
 import UIKit
 
-class AnimatedDotView: UIView, ActivityStateChangable {
-    var dotColor : UIColor? {
+class AnimatedDotView: DotView {
+    var dotColor : UIColor? = UIColor.whiteColor() {
         didSet {
             guard let dotColor = dotColor else { return }
             layer.borderColor  = dotColor.CGColor
@@ -18,7 +18,7 @@ class AnimatedDotView: UIView, ActivityStateChangable {
 
     var animateDuration : NSTimeInterval = 1.0
     
-    init() {
+    override init() {
         super.init(frame: CGRectZero)
         setup()
     }
@@ -28,20 +28,14 @@ class AnimatedDotView: UIView, ActivityStateChangable {
         setup()
     }
 
-    override init(frame: CGRect) {
+    required init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
 
-    private func setup() {
-        dotColor = UIColor.whiteColor()
-        backgroundColor = UIColor.clearColor()
-        layer.cornerRadius = frame.width / 2.0
-        layer.borderColor = UIColor.whiteColor().CGColor
-        layer.borderWidth = 2.0
-    }
+    private func setup() { }
 
-    func changeActivityState(active: Bool) {
+    override func changeActivityState(active: Bool) {
         if active {
             animateToActiveState()
         }

@@ -11,7 +11,7 @@
 		2530D6EA1C7DDC5A00D57AFC /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530D6E91C7DDC5A00D57AFC /* PhotoCell.swift */; };
 		2530D6EF1C7EA4CA00D57AFC /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530D6EE1C7EA4CA00D57AFC /* DotView.swift */; };
 		2530D6F11C7EA77D00D57AFC /* AnimatedDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530D6F01C7EA77D00D57AFC /* AnimatedDotView.swift */; };
-		2530D6F31C7EA7E900D57AFC /* ActivityStateChangable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530D6F21C7EA7E900D57AFC /* ActivityStateChangable.swift */; };
+		2530D6F51C7ED73200D57AFC /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530D6F41C7ED73200D57AFC /* PageControl.swift */; };
 		48377B901C1027F5007B8C21 /* DemoVCWithXib.m in Sources */ = {isa = PBXBuildFile; fileRef = 48377B8E1C1027F5007B8C21 /* DemoVCWithXib.m */; };
 		48377B911C1027F5007B8C21 /* DemoVCWithXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48377B8F1C1027F5007B8C21 /* DemoVCWithXib.xib */; };
 		4855B1941B09CBA500AA0788 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4855B1931B09CBA500AA0788 /* placeholder@2x.png */; };
@@ -27,7 +27,6 @@
 		9900D18E1ABEB2490077A6CB /* SDCycleScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9900D18D1ABEB2490077A6CB /* SDCycleScrollViewTests.m */; };
 		9900D1A01ABEB41B0077A6CB /* h2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9900D19C1ABEB41B0077A6CB /* h2.jpg */; };
 		9900D1A21ABEB41B0077A6CB /* h4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9900D19E1ABEB41B0077A6CB /* h4.jpg */; };
-		990141041AC941FD00D0D74F /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 990141001AC941FD00D0D74F /* TAPageControl.m */; };
 		9901410C1AC9420E00D0D74F /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 990141081AC9420E00D0D74F /* SDCycleScrollView.m */; };
 		999C10981AC14F3B00C11CDB /* h3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 999C10961AC14F3B00C11CDB /* h3.jpg */; };
 		999C109A1AC14F7200C11CDB /* h1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 999C10991AC14F7200C11CDB /* h1.jpg */; };
@@ -66,7 +65,7 @@
 		2530D6E91C7DDC5A00D57AFC /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		2530D6EE1C7EA4CA00D57AFC /* DotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
 		2530D6F01C7EA77D00D57AFC /* AnimatedDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedDotView.swift; sourceTree = "<group>"; };
-		2530D6F21C7EA7E900D57AFC /* ActivityStateChangable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityStateChangable.swift; sourceTree = "<group>"; };
+		2530D6F41C7ED73200D57AFC /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		48377B8D1C1027F5007B8C21 /* DemoVCWithXib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoVCWithXib.h; sourceTree = "<group>"; };
 		48377B8E1C1027F5007B8C21 /* DemoVCWithXib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoVCWithXib.m; sourceTree = "<group>"; };
 		48377B8F1C1027F5007B8C21 /* DemoVCWithXib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoVCWithXib.xib; sourceTree = "<group>"; };
@@ -89,8 +88,6 @@
 		9900D18D1ABEB2490077A6CB /* SDCycleScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollViewTests.m; sourceTree = "<group>"; };
 		9900D19C1ABEB41B0077A6CB /* h2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h2.jpg; sourceTree = "<group>"; };
 		9900D19E1ABEB41B0077A6CB /* h4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h4.jpg; sourceTree = "<group>"; };
-		990140FF1AC941FD00D0D74F /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
-		990141001AC941FD00D0D74F /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
 		990141071AC9420E00D0D74F /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
 		990141081AC9420E00D0D74F /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
 		999C10961AC14F3B00C11CDB /* h3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h3.jpg; sourceTree = "<group>"; };
@@ -310,11 +307,9 @@
 		99E7B30B1AC11F1C009F9A2E /* PageControl */ = {
 			isa = PBXGroup;
 			children = (
-				2530D6F21C7EA7E900D57AFC /* ActivityStateChangable.swift */,
 				2530D6F01C7EA77D00D57AFC /* AnimatedDotView.swift */,
 				2530D6EE1C7EA4CA00D57AFC /* DotView.swift */,
-				990140FF1AC941FD00D0D74F /* TAPageControl.h */,
-				990141001AC941FD00D0D74F /* TAPageControl.m */,
+				2530D6F41C7ED73200D57AFC /* PageControl.swift */,
 			);
 			path = PageControl;
 			sourceTree = "<group>";
@@ -443,8 +438,6 @@
 				9900D1771ABEB2490077A6CB /* AppDelegate.m in Sources */,
 				99E727FA1BDBB91D00771161 /* UIImage+MultiFormat.m in Sources */,
 				99E727FD1BDBB91D00771161 /* UIImageView+WebCache.m in Sources */,
-				2530D6F31C7EA7E900D57AFC /* ActivityStateChangable.swift in Sources */,
-				990141041AC941FD00D0D74F /* TAPageControl.m in Sources */,
 				48377B901C1027F5007B8C21 /* DemoVCWithXib.m in Sources */,
 				99E727FE1BDBB91D00771161 /* UIView+WebCacheOperation.m in Sources */,
 				2530D6E81C7DD85200D57AFC /* UIViewExtension.swift in Sources */,
@@ -452,6 +445,7 @@
 				99E727F41BDBB91D00771161 /* SDWebImageDownloader.m in Sources */,
 				99E727FC1BDBB91D00771161 /* UIImageView+HighlightedWebCache.m in Sources */,
 				2530D6EF1C7EA4CA00D57AFC /* DotView.swift in Sources */,
+				2530D6F51C7ED73200D57AFC /* PageControl.swift in Sources */,
 				99E727F31BDBB91D00771161 /* SDWebImageDecoder.m in Sources */,
 				99E727FB1BDBB91D00771161 /* UIImage+WebP.m in Sources */,
 				99E727F61BDBB91D00771161 /* SDWebImageManager.m in Sources */,
