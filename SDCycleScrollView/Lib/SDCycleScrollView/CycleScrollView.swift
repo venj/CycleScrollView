@@ -32,7 +32,11 @@ private let ID = "cycleCell"
 
 class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDelegate {
     var titles : [String]?
-    var autoScrollTimeInterval : NSTimeInterval?
+    var autoScrollTimeInterval : NSTimeInterval? {
+        didSet {
+            doneSettingAutoScroll()
+        }
+    }
     var infiniteLoop : Bool = true
     var autoScroll : Bool = true
     weak var delegate : CycleScrollViewDelegate?
@@ -223,8 +227,10 @@ class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
         if timer != nil {
             timer?.invalidate()
         }
-        timer = NSTimer.scheduledTimerWithTimeInterval(autoScrollTimeInterval!, target: self, selector:"automaticScroll", userInfo: nil, repeats: true)
-        NSRunLoop.mainRunLoop().addTimer(timer!, forMode: NSRunLoopCommonModes)
+        if autoScroll {
+            timer = NSTimer.scheduledTimerWithTimeInterval(autoScrollTimeInterval!, target: self, selector:"automaticScroll", userInfo: nil, repeats: true)
+            NSRunLoop.mainRunLoop().addTimer(timer!, forMode: NSRunLoopCommonModes)
+        }
     }
 
     func automaticScroll() {
@@ -261,7 +267,7 @@ class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
     }
 
     private func doneSettingAutoScroll() {
-        if autoScroll { setupTimer() }
+        setupTimer()
     }
 
     private func doneSettingCurrentPageDotImage() {
@@ -336,7 +342,8 @@ class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
         }
 
         if titles?.count > 0 && itemIndex < titles?.count {
-            cell.title = titles?[itemIndex]
+            let title = titles![itemIndex]
+            cell.title = title
         }
 
         if !cell.hasConfigured {

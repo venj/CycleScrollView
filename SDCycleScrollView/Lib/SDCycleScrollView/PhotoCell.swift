@@ -20,9 +20,8 @@ class PhotoCell: UICollectionViewCell {
     }
     var title : String? {
         didSet {
-            guard title != nil else { return }
-            titleLabel = UILabel()
-            titleLabel?.text = "   \(title!)"
+            guard let title = title else { return }
+            titleLabel?.text = "   \(title)"
         }
     }
     
@@ -47,14 +46,7 @@ class PhotoCell: UICollectionViewCell {
     var titleLabelHeight : CGFloat = 0.0
     var hasConfigured : Bool = false
 
-    private var titleLabel : UILabel? {
-        didSet {
-            guard let titleLabel = titleLabel else { return }
-            if !contentView.subviews.contains(titleLabel) {
-                contentView.addSubview(titleLabel)
-            }
-        }
-    }
+    private var titleLabel : UILabel?
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -68,11 +60,18 @@ class PhotoCell: UICollectionViewCell {
 
     private func setupViews() {
         imageView = UIImageView()
+        titleLabel = UILabel()
+        contentView.addSubview(titleLabel!)
     }
 
     override func layoutSubviews() {
         super.layoutSubviews()
         imageView?.frame = bounds // imageView should not be nil
         titleLabel?.frame = CGRect(x: 0.0, y: sd_height - titleLabelHeight, width: sd_width, height: titleLabelHeight)
+    }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        title = nil
     }
 }
