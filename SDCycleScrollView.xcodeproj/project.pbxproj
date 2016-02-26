@@ -13,6 +13,7 @@
 		2530D6EF1C7EA4CA00D57AFC /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530D6EE1C7EA4CA00D57AFC /* DotView.swift */; };
 		2530D6F11C7EA77D00D57AFC /* AnimatedDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530D6F01C7EA77D00D57AFC /* AnimatedDotView.swift */; };
 		2530D6F51C7ED73200D57AFC /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530D6F41C7ED73200D57AFC /* PageControl.swift */; };
+		256576431C80853E00FA445F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256576421C80853E00FA445F /* AppDelegate.swift */; };
 		48377B901C1027F5007B8C21 /* DemoVCWithXib.m in Sources */ = {isa = PBXBuildFile; fileRef = 48377B8E1C1027F5007B8C21 /* DemoVCWithXib.m */; };
 		48377B911C1027F5007B8C21 /* DemoVCWithXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48377B8F1C1027F5007B8C21 /* DemoVCWithXib.xib */; };
 		4855B1941B09CBA500AA0788 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4855B1931B09CBA500AA0788 /* placeholder@2x.png */; };
@@ -21,8 +22,6 @@
 		485B54791C3A196C001944FA /* pageControlCurrentDot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 485B54751C3A196C001944FA /* pageControlCurrentDot@3x.png */; };
 		485B547A1C3A196C001944FA /* pageControlCurrentDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 485B54761C3A196C001944FA /* pageControlCurrentDot@2x.png */; };
 		9566EEDB770558E29EB5A12C /* Pods_SDCycleScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E3B07EC7D5D3651E04C299 /* Pods_SDCycleScrollView.framework */; };
-		9900D1741ABEB2490077A6CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9900D1731ABEB2490077A6CB /* main.m */; };
-		9900D1771ABEB2490077A6CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9900D1761ABEB2490077A6CB /* AppDelegate.m */; };
 		9900D17A1ABEB2490077A6CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9900D1791ABEB2490077A6CB /* ViewController.m */; };
 		9900D17F1ABEB2490077A6CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9900D17E1ABEB2490077A6CB /* Images.xcassets */; };
 		9900D1821ABEB2490077A6CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9900D1801ABEB2490077A6CB /* LaunchScreen.xib */; };
@@ -55,6 +54,7 @@
 		2530D6EE1C7EA4CA00D57AFC /* DotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
 		2530D6F01C7EA77D00D57AFC /* AnimatedDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedDotView.swift; sourceTree = "<group>"; };
 		2530D6F41C7ED73200D57AFC /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		256576421C80853E00FA445F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30ADE5F06A851E157D19BBF5 /* Pods-SDCycleScrollViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDCycleScrollViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDCycleScrollViewTests/Pods-SDCycleScrollViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		48377B8D1C1027F5007B8C21 /* DemoVCWithXib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoVCWithXib.h; sourceTree = "<group>"; };
 		48377B8E1C1027F5007B8C21 /* DemoVCWithXib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoVCWithXib.m; sourceTree = "<group>"; };
@@ -67,9 +67,6 @@
 		4BB93F76BDCB07E8F6B81467 /* Pods-SDCycleScrollViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDCycleScrollViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDCycleScrollViewTests/Pods-SDCycleScrollViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9900D16E1ABEB2490077A6CB /* SDCycleScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDCycleScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9900D1721ABEB2490077A6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9900D1731ABEB2490077A6CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9900D1751ABEB2490077A6CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9900D1761ABEB2490077A6CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9900D1781ABEB2490077A6CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9900D1791ABEB2490077A6CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9900D17E1ABEB2490077A6CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -166,8 +163,7 @@
 			children = (
 				48377B8A1C10265E007B8C21 /* DemoVC */,
 				9900D1971ABEB2C70077A6CB /* Lib */,
-				9900D1751ABEB2490077A6CB /* AppDelegate.h */,
-				9900D1761ABEB2490077A6CB /* AppDelegate.m */,
+				256576421C80853E00FA445F /* AppDelegate.swift */,
 				9900D1781ABEB2490077A6CB /* ViewController.h */,
 				9900D1791ABEB2490077A6CB /* ViewController.m */,
 				9900D17E1ABEB2490077A6CB /* Images.xcassets */,
@@ -191,7 +187,6 @@
 				9900D19C1ABEB41B0077A6CB /* h2.jpg */,
 				9900D19E1ABEB41B0077A6CB /* h4.jpg */,
 				9900D1721ABEB2490077A6CB /* Info.plist */,
-				9900D1731ABEB2490077A6CB /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -464,14 +459,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256576431C80853E00FA445F /* AppDelegate.swift in Sources */,
 				2530D6EA1C7DDC5A00D57AFC /* PhotoCell.swift in Sources */,
 				9900D17A1ABEB2490077A6CB /* ViewController.m in Sources */,
 				2530D6F11C7EA77D00D57AFC /* AnimatedDotView.swift in Sources */,
-				9900D1771ABEB2490077A6CB /* AppDelegate.m in Sources */,
 				250943DD1C7FFB4200C5A62D /* CycleScrollView.swift in Sources */,
 				48377B901C1027F5007B8C21 /* DemoVCWithXib.m in Sources */,
 				2530D6E81C7DD85200D57AFC /* UIViewExtension.swift in Sources */,
-				9900D1741ABEB2490077A6CB /* main.m in Sources */,
 				2530D6EF1C7EA4CA00D57AFC /* DotView.swift in Sources */,
 				2530D6F51C7ED73200D57AFC /* PageControl.swift in Sources */,
 			);
