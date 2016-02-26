@@ -17,6 +17,7 @@
 		256576501C808B5600FA445F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565764F1C808B5600FA445F /* ViewController.swift */; };
 		256576531C809B9B00FA445F /* DemoXIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256576511C809B9B00FA445F /* DemoXIBViewController.swift */; };
 		256576541C809B9B00FA445F /* DemoXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256576521C809B9B00FA445F /* DemoXIBViewController.xib */; };
+		256576571C80A1CD00FA445F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256576561C80A1CD00FA445F /* LaunchScreen.xib */; };
 		4855B1941B09CBA500AA0788 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4855B1931B09CBA500AA0788 /* placeholder@2x.png */; };
 		485B54771C3A196C001944FA /* pageControlDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 485B54731C3A196C001944FA /* pageControlDot@2x.png */; };
 		485B54781C3A196C001944FA /* pageControlDot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 485B54741C3A196C001944FA /* pageControlDot@3x.png */; };
@@ -24,7 +25,6 @@
 		485B547A1C3A196C001944FA /* pageControlCurrentDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 485B54761C3A196C001944FA /* pageControlCurrentDot@2x.png */; };
 		9566EEDB770558E29EB5A12C /* Pods_SDCycleScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E3B07EC7D5D3651E04C299 /* Pods_SDCycleScrollView.framework */; };
 		9900D17F1ABEB2490077A6CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9900D17E1ABEB2490077A6CB /* Images.xcassets */; };
-		9900D1821ABEB2490077A6CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9900D1801ABEB2490077A6CB /* LaunchScreen.xib */; };
 		9900D18E1ABEB2490077A6CB /* SDCycleScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9900D18D1ABEB2490077A6CB /* SDCycleScrollViewTests.m */; };
 		9900D1A01ABEB41B0077A6CB /* h2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9900D19C1ABEB41B0077A6CB /* h2.jpg */; };
 		9900D1A21ABEB41B0077A6CB /* h4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9900D19E1ABEB41B0077A6CB /* h4.jpg */; };
@@ -58,6 +58,7 @@
 		2565764F1C808B5600FA445F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		256576511C809B9B00FA445F /* DemoXIBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoXIBViewController.swift; path = SDCycleScrollView/DemoXIBViewController.swift; sourceTree = SOURCE_ROOT; };
 		256576521C809B9B00FA445F /* DemoXIBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DemoXIBViewController.xib; path = SDCycleScrollView/DemoXIBViewController.xib; sourceTree = SOURCE_ROOT; };
+		256576561C80A1CD00FA445F /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		30ADE5F06A851E157D19BBF5 /* Pods-SDCycleScrollViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDCycleScrollViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDCycleScrollViewTests/Pods-SDCycleScrollViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		4855B1931B09CBA500AA0788 /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
 		485B54731C3A196C001944FA /* pageControlDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControlDot@2x.png"; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		9900D16E1ABEB2490077A6CB /* SDCycleScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDCycleScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9900D1721ABEB2490077A6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9900D17E1ABEB2490077A6CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9900D1811ABEB2490077A6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9900D1871ABEB2490077A6CB /* SDCycleScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDCycleScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9900D18C1ABEB2490077A6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9900D18D1ABEB2490077A6CB /* SDCycleScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollViewTests.m; sourceTree = "<group>"; };
@@ -146,8 +146,8 @@
 				2565764F1C808B5600FA445F /* ViewController.swift */,
 				256576511C809B9B00FA445F /* DemoXIBViewController.swift */,
 				256576521C809B9B00FA445F /* DemoXIBViewController.xib */,
+				256576561C80A1CD00FA445F /* LaunchScreen.xib */,
 				9900D17E1ABEB2490077A6CB /* Images.xcassets */,
-				9900D1801ABEB2490077A6CB /* LaunchScreen.xib */,
 				9900D1711ABEB2490077A6CB /* Supporting Files */,
 			);
 			path = SDCycleScrollView;
@@ -322,10 +322,10 @@
 				485B54771C3A196C001944FA /* pageControlDot@2x.png in Resources */,
 				99A732631B24AB660033E878 /* 005.jpg in Resources */,
 				256576541C809B9B00FA445F /* DemoXIBViewController.xib in Resources */,
-				9900D1821ABEB2490077A6CB /* LaunchScreen.xib in Resources */,
 				485B54781C3A196C001944FA /* pageControlDot@3x.png in Resources */,
 				4855B1941B09CBA500AA0788 /* placeholder@2x.png in Resources */,
 				485B547A1C3A196C001944FA /* pageControlCurrentDot@2x.png in Resources */,
+				256576571C80A1CD00FA445F /* LaunchScreen.xib in Resources */,
 				9900D17F1ABEB2490077A6CB /* Images.xcassets in Resources */,
 				485B54791C3A196C001944FA /* pageControlCurrentDot@3x.png in Resources */,
 				9900D1A01ABEB41B0077A6CB /* h2.jpg in Resources */,
@@ -468,17 +468,6 @@
 			targetProxy = 9900D1881ABEB2490077A6CB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9900D1801ABEB2490077A6CB /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9900D1811ABEB2490077A6CB /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9900D18F1ABEB2490077A6CB /* Debug */ = {
