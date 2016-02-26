@@ -4,7 +4,8 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'SDCycleScrollView' do
-pod 'Reveal-iOS-SDK', '~> 1.6.2', :configurations => ['Debug']
+    pod 'Kingfisher', '~> 2.0'
+    pod 'Reveal-iOS-SDK', '~> 1.6.2', :configurations => ['Debug']
 end
 
 target 'SDCycleScrollViewTests' do

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 @objc
 enum CycleScrollViewPageContolAliment : Int {
@@ -276,7 +277,7 @@ class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
     }
 
     class func clearImagesCache() {
-        SDWebImageManager.sharedManager().imageCache.clearDisk()
+        KingfisherManager.sharedManager.cache.clearDiskCache()
     }
 
     func clearCache() {
@@ -328,7 +329,7 @@ class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
         let itemIndex = indexPath.item % imagePaths.count
         let imagePath = imagePaths[itemIndex]
         if imagePath.hasPrefix("http://") || imagePath.hasPrefix("https://") {
-            cell.imageView?.sd_setImageWithURL(NSURL(string: imagePath), placeholderImage: placeholderImage)
+            cell.imageView?.kf_setImageWithURL(NSURL(string: imagePath)!, placeholderImage: placeholderImage)
         }
         else {
             cell.imageView?.image = UIImage(named: imagePath)
