@@ -29,9 +29,9 @@
  */
 
 #import "ViewController.h"
-#import "SDCycleScrollView.h"
+#import "SDCycleScrollView-Swift.h"
 
-@interface ViewController () <SDCycleScrollViewDelegate>
+@interface ViewController () <CycleScrollViewDelegate>
 
 @end
 
@@ -56,8 +56,7 @@
     NSArray *imageNames = @[@"h1.jpg",
                             @"h2.jpg",
                             @"h3.jpg",
-                            @"h4.jpg",
-                            @"h7" // 本地图片请填写全名
+                            @"h4.jpg"
                             ];
     
     // 情景二：采用网络图片实现
@@ -81,55 +80,54 @@
 // >>>>>>>>>>>>>>>>>>>>>>>>> demo轮播图1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     
     // 本地加载 --- 创建不带标题的图片轮播器
-    SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 64, w, 180) shouldInfiniteLoop:YES imageNamesGroup:imageNames];
+    //CycleScrollView *cycleScrollView = [[CycleScrollView alloc] initWithFrame:CGRectMake(0, 64, w, 180) shouldInfiniteLoop:true imagePaths:imageNames];
+    CycleScrollView *cycleScrollView = [[CycleScrollView alloc] initWithFrame:CGRectMake(0, 64, w, 180) delegate:nil placeholderImage:nil shouldInfiniteLoop:true imagesPaths:imageNames];
     cycleScrollView.delegate = self;
-    cycleScrollView.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
+    cycleScrollView.pageControlStyle = CycleScrollViewPageContolStyleAnimated;
     [demoContainerView addSubview:cycleScrollView];
     //         --- 轮播时间间隔，默认1.0秒，可自定义
     //cycleScrollView.autoScrollTimeInterval = 4.0;
     
-    
+
 // >>>>>>>>>>>>>>>>>>>>>>>>> demo轮播图2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     
     // 网络加载 --- 创建带标题的图片轮播器
-    SDCycleScrollView *cycleScrollView2 = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 280, w, 180) delegate:self placeholderImage:[UIImage imageNamed:@"placeholder"]];
-    
-    cycleScrollView2.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
-    cycleScrollView2.titlesGroup = titles;
+    //CycleScrollView *cycleScrollView2 = [[CycleScrollView alloc] initWithFrame:CGRectMake(0, 280, w, 180) delegate:self placeholderImage: [UIImage imageNamed:@"placeholder"]];
+    CycleScrollView *cycleScrollView2 = [[CycleScrollView alloc] initWithFrame:CGRectMake(0, 280, w, 180) delegate:self placeholderImage:[UIImage imageNamed:@"placeholder"] shouldInfiniteLoop:true imagesPaths:@[]];
+    cycleScrollView2.pageControlAliment = CycleScrollViewPageContolAlimentRight;
+    cycleScrollView2.titles = titles;
     cycleScrollView2.currentPageDotColor = [UIColor whiteColor]; // 自定义分页控件小圆标颜色
     [demoContainerView addSubview:cycleScrollView2];
     
     //         --- 模拟加载延迟
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        cycleScrollView2.imageURLStringsGroup = imagesURLStrings;
+        cycleScrollView2.imagePaths = imagesURLStrings;
     });
     
-    /*
-     block监听点击方式
+
+     //block监听点击方式
      
-     cycleScrollView2.clickItemOperationBlock = ^(NSInteger index) {
-        NSLog(@">>>>>  %ld", (long)index);
-     };
+     //cycleScrollView2.clickItemOperationBlock = ^(NSInteger index) {
+      //  NSLog(@">>>>>  %ld", (long)index);
+     //};
      
-     */
-    
-    
+
+
 // >>>>>>>>>>>>>>>>>>>>>>>>> demo轮播图3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     
     // 网络加载 --- 创建自定义图片的pageControlDot的图片轮播器
-    SDCycleScrollView *cycleScrollView3 = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 500, w, 180) delegate:self placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    //CycleScrollView *cycleScrollView3 = [[CycleScrollView alloc] initWithFrame:CGRectMake(0, 500, w, 180) delegate:self placeholderImage: [UIImage imageNamed:@"placeholder"]];
+    CycleScrollView *cycleScrollView3 = [[CycleScrollView alloc] initWithFrame:CGRectMake(0, 500, w, 180) delegate:self placeholderImage:[UIImage imageNamed:@"placeholder"] shouldInfiniteLoop:true imagesPaths:@[]];
     cycleScrollView3.currentPageDotImage = [UIImage imageNamed:@"pageControlCurrentDot"];
     cycleScrollView3.pageDotImage = [UIImage imageNamed:@"pageControlDot"];
-    cycleScrollView3.imageURLStringsGroup = imagesURLStrings;
-    
+    cycleScrollView3.imagePaths = imagesURLStrings;
     [demoContainerView addSubview:cycleScrollView3];
-    
 }
 
 
 #pragma mark - SDCycleScrollViewDelegate
 
-- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
+- (void)cycleScrollView:(CycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
 {
     NSLog(@"---点击了第%ld张图片", (long)index);
     

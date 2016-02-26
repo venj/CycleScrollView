@@ -29,11 +29,11 @@
  */
 
 #import "DemoVCWithXib.h"
-#import "SDCycleScrollView.h"
+#import "SDCycleScrollView-Swift.h"
 
-@interface DemoVCWithXib () <SDCycleScrollViewDelegate>
+@interface DemoVCWithXib () <CycleScrollViewDelegate>
 
-@property (weak, nonatomic) IBOutlet SDCycleScrollView *bannerView;
+@property (weak, nonatomic) IBOutlet CycleScrollView *bannerView;
 @end
 
 @implementation DemoVCWithXib
@@ -57,19 +57,17 @@
                         ];
     
 
-    self.bannerView.imageURLStringsGroup = imagesURLStrings;
-    self.bannerView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
+    self.bannerView.imagePaths = imagesURLStrings;
+    self.bannerView.pageControlAliment = CycleScrollViewPageContolAlimentRight;
     self.bannerView.delegate = self;
-    self.bannerView.titlesGroup = titles;
+    self.bannerView.titles = titles;
     self.bannerView.currentPageDotColor = [UIColor yellowColor]; // 自定义分页控件小圆标颜色
     self.bannerView.placeholderImage = [UIImage imageNamed:@"placeholder"];
-    
-    
-    
-    SDCycleScrollView *banner2 = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 200, [UIScreen mainScreen].bounds.size.width, 140) delegate:nil placeholderImage:nil];
-    banner2.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
-    banner2.imageURLStringsGroup = imagesURLStrings;
-    banner2.titlesGroup = titles;
+
+    CycleScrollView *banner2 = [[CycleScrollView alloc] initWithFrame:CGRectMake(0, 200, [UIScreen mainScreen].bounds.size.width, 140) delegate:nil placeholderImage:nil shouldInfiniteLoop:true imagesPaths:@[]];
+    banner2.pageControlAliment = CycleScrollViewPageContolAlimentRight;
+    banner2.imagePaths = imagesURLStrings;
+    banner2.titles = titles;
     [self.view addSubview:banner2];
 
 }
@@ -77,7 +75,7 @@
 
 #pragma mark - SDCycleScrollViewDelegate
 
-- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
+- (void)cycleScrollView:(CycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
 {
     
 }

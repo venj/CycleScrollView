@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250943DD1C7FFB4200C5A62D /* CycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250943DC1C7FFB4200C5A62D /* CycleScrollView.swift */; };
 		2530D6E81C7DD85200D57AFC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530D6E71C7DD85200D57AFC /* UIViewExtension.swift */; };
 		2530D6EA1C7DDC5A00D57AFC /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530D6E91C7DDC5A00D57AFC /* PhotoCell.swift */; };
 		2530D6EF1C7EA4CA00D57AFC /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530D6EE1C7EA4CA00D57AFC /* DotView.swift */; };
@@ -19,6 +20,7 @@
 		485B54781C3A196C001944FA /* pageControlDot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 485B54741C3A196C001944FA /* pageControlDot@3x.png */; };
 		485B54791C3A196C001944FA /* pageControlCurrentDot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 485B54751C3A196C001944FA /* pageControlCurrentDot@3x.png */; };
 		485B547A1C3A196C001944FA /* pageControlCurrentDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 485B54761C3A196C001944FA /* pageControlCurrentDot@2x.png */; };
+		9566EEDB770558E29EB5A12C /* Pods_SDCycleScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E3B07EC7D5D3651E04C299 /* Pods_SDCycleScrollView.framework */; };
 		9900D1741ABEB2490077A6CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9900D1731ABEB2490077A6CB /* main.m */; };
 		9900D1771ABEB2490077A6CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9900D1761ABEB2490077A6CB /* AppDelegate.m */; };
 		9900D17A1ABEB2490077A6CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9900D1791ABEB2490077A6CB /* ViewController.m */; };
@@ -27,7 +29,6 @@
 		9900D18E1ABEB2490077A6CB /* SDCycleScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9900D18D1ABEB2490077A6CB /* SDCycleScrollViewTests.m */; };
 		9900D1A01ABEB41B0077A6CB /* h2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9900D19C1ABEB41B0077A6CB /* h2.jpg */; };
 		9900D1A21ABEB41B0077A6CB /* h4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9900D19E1ABEB41B0077A6CB /* h4.jpg */; };
-		9901410C1AC9420E00D0D74F /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 990141081AC9420E00D0D74F /* SDCycleScrollView.m */; };
 		999C10981AC14F3B00C11CDB /* h3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 999C10961AC14F3B00C11CDB /* h3.jpg */; };
 		999C109A1AC14F7200C11CDB /* h1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 999C10991AC14F7200C11CDB /* h1.jpg */; };
 		99A732631B24AB660033E878 /* 005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99A732621B24AB660033E878 /* 005.jpg */; };
@@ -47,6 +48,7 @@
 		99E727FC1BDBB91D00771161 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E727EA1BDBB91D00771161 /* UIImageView+HighlightedWebCache.m */; };
 		99E727FD1BDBB91D00771161 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E727EC1BDBB91D00771161 /* UIImageView+WebCache.m */; };
 		99E727FE1BDBB91D00771161 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E727EE1BDBB91D00771161 /* UIView+WebCacheOperation.m */; };
+		EED9B150BC50256DBE8FC828 /* Pods_SDCycleScrollViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EF1F83B939B4616F608462 /* Pods_SDCycleScrollViewTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,12 +62,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F59992F8558612D9AE4F0D5 /* Pods-SDCycleScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDCycleScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDCycleScrollView/Pods-SDCycleScrollView.release.xcconfig"; sourceTree = "<group>"; };
+		1411ABD2022E087127963DE7 /* Pods-SDCycleScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDCycleScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDCycleScrollView/Pods-SDCycleScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		250943DC1C7FFB4200C5A62D /* CycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleScrollView.swift; sourceTree = "<group>"; };
 		2530D6E61C7DD85200D57AFC /* SDCycleScrollView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDCycleScrollView-Bridging-Header.h"; sourceTree = "<group>"; };
 		2530D6E71C7DD85200D57AFC /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		2530D6E91C7DDC5A00D57AFC /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		2530D6EE1C7EA4CA00D57AFC /* DotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
 		2530D6F01C7EA77D00D57AFC /* AnimatedDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedDotView.swift; sourceTree = "<group>"; };
 		2530D6F41C7ED73200D57AFC /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		30ADE5F06A851E157D19BBF5 /* Pods-SDCycleScrollViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDCycleScrollViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDCycleScrollViewTests/Pods-SDCycleScrollViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		48377B8D1C1027F5007B8C21 /* DemoVCWithXib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoVCWithXib.h; sourceTree = "<group>"; };
 		48377B8E1C1027F5007B8C21 /* DemoVCWithXib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoVCWithXib.m; sourceTree = "<group>"; };
 		48377B8F1C1027F5007B8C21 /* DemoVCWithXib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoVCWithXib.xib; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 		485B54741C3A196C001944FA /* pageControlDot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControlDot@3x.png"; sourceTree = "<group>"; };
 		485B54751C3A196C001944FA /* pageControlCurrentDot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControlCurrentDot@3x.png"; sourceTree = "<group>"; };
 		485B54761C3A196C001944FA /* pageControlCurrentDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControlCurrentDot@2x.png"; sourceTree = "<group>"; };
+		4BB93F76BDCB07E8F6B81467 /* Pods-SDCycleScrollViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDCycleScrollViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDCycleScrollViewTests/Pods-SDCycleScrollViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9900D16E1ABEB2490077A6CB /* SDCycleScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDCycleScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9900D1721ABEB2490077A6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9900D1731ABEB2490077A6CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,8 +95,6 @@
 		9900D18D1ABEB2490077A6CB /* SDCycleScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollViewTests.m; sourceTree = "<group>"; };
 		9900D19C1ABEB41B0077A6CB /* h2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h2.jpg; sourceTree = "<group>"; };
 		9900D19E1ABEB41B0077A6CB /* h4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h4.jpg; sourceTree = "<group>"; };
-		990141071AC9420E00D0D74F /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
-		990141081AC9420E00D0D74F /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
 		999C10961AC14F3B00C11CDB /* h3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h3.jpg; sourceTree = "<group>"; };
 		999C10991AC14F7200C11CDB /* h1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h1.jpg; sourceTree = "<group>"; };
 		99A732621B24AB660033E878 /* 005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 005.jpg; sourceTree = "<group>"; };
@@ -126,6 +131,8 @@
 		99E727EC1BDBB91D00771161 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		99E727ED1BDBB91D00771161 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		99E727EE1BDBB91D00771161 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		A8E3B07EC7D5D3651E04C299 /* Pods_SDCycleScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDCycleScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2EF1F83B939B4616F608462 /* Pods_SDCycleScrollViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDCycleScrollViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9566EEDB770558E29EB5A12C /* Pods_SDCycleScrollView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,17 +148,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED9B150BC50256DBE8FC828 /* Pods_SDCycleScrollViewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39F3CC30A16012A5FB9CFFE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8E3B07EC7D5D3651E04C299 /* Pods_SDCycleScrollView.framework */,
+				C2EF1F83B939B4616F608462 /* Pods_SDCycleScrollViewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		48377B8A1C10265E007B8C21 /* DemoVC */ = {
 			isa = PBXGroup;
 			children = (
-				48377B8B1C102758007B8C21 /* 纯代码demo */,
 				48377B8C1C102758007B8C21 /* xib的demo */,
+				48377B8B1C102758007B8C21 /* 纯代码demo */,
 			);
 			path = DemoVC;
 			sourceTree = "<group>";
@@ -178,6 +196,8 @@
 				9900D1701ABEB2490077A6CB /* SDCycleScrollView */,
 				9900D18A1ABEB2490077A6CB /* SDCycleScrollViewTests */,
 				9900D16F1ABEB2490077A6CB /* Products */,
+				BE2F25A0280C630B5B6846C3 /* Pods */,
+				39F3CC30A16012A5FB9CFFE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,8 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				2530D6E91C7DDC5A00D57AFC /* PhotoCell.swift */,
-				990141071AC9420E00D0D74F /* SDCycleScrollView.h */,
-				990141081AC9420E00D0D74F /* SDCycleScrollView.m */,
+				250943DC1C7FFB4200C5A62D /* CycleScrollView.swift */,
 				2530D6E71C7DD85200D57AFC /* UIViewExtension.swift */,
 				99E7B30B1AC11F1C009F9A2E /* PageControl */,
 				2530D6E61C7DD85200D57AFC /* SDCycleScrollView-Bridging-Header.h */,
@@ -314,6 +333,17 @@
 			path = PageControl;
 			sourceTree = "<group>";
 		};
+		BE2F25A0280C630B5B6846C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1411ABD2022E087127963DE7 /* Pods-SDCycleScrollView.debug.xcconfig */,
+				0F59992F8558612D9AE4F0D5 /* Pods-SDCycleScrollView.release.xcconfig */,
+				4BB93F76BDCB07E8F6B81467 /* Pods-SDCycleScrollViewTests.debug.xcconfig */,
+				30ADE5F06A851E157D19BBF5 /* Pods-SDCycleScrollViewTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,9 +351,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9900D1911ABEB2490077A6CB /* Build configuration list for PBXNativeTarget "SDCycleScrollView" */;
 			buildPhases = (
+				B11910416820AFBFA2A06FE0 /* Check Pods Manifest.lock */,
 				9900D16A1ABEB2490077A6CB /* Sources */,
 				9900D16B1ABEB2490077A6CB /* Frameworks */,
 				9900D16C1ABEB2490077A6CB /* Resources */,
+				59F7137EC020D5E92756F72E /* Embed Pods Frameworks */,
+				34B54FF15C6995824F37A76D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,9 +371,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9900D1941ABEB2490077A6CB /* Build configuration list for PBXNativeTarget "SDCycleScrollViewTests" */;
 			buildPhases = (
+				4DC7141EE999F3EDC9DCE41B /* Check Pods Manifest.lock */,
 				9900D1831ABEB2490077A6CB /* Sources */,
 				9900D1841ABEB2490077A6CB /* Frameworks */,
 				9900D1851ABEB2490077A6CB /* Resources */,
+				65EB24D54B0E110030D3AE42 /* Embed Pods Frameworks */,
+				CDB6F0882BAA4B312C9AD2A9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -420,6 +456,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34B54FF15C6995824F37A76D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDCycleScrollView/Pods-SDCycleScrollView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DC7141EE999F3EDC9DCE41B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		59F7137EC020D5E92756F72E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDCycleScrollView/Pods-SDCycleScrollView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65EB24D54B0E110030D3AE42 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDCycleScrollViewTests/Pods-SDCycleScrollViewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B11910416820AFBFA2A06FE0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CDB6F0882BAA4B312C9AD2A9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDCycleScrollViewTests/Pods-SDCycleScrollViewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9900D16A1ABEB2490077A6CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -436,6 +565,7 @@
 				99E727EF1BDBB91D00771161 /* MKAnnotationView+WebCache.m in Sources */,
 				99E727F21BDBB91D00771161 /* SDWebImageCompat.m in Sources */,
 				9900D1771ABEB2490077A6CB /* AppDelegate.m in Sources */,
+				250943DD1C7FFB4200C5A62D /* CycleScrollView.swift in Sources */,
 				99E727FA1BDBB91D00771161 /* UIImage+MultiFormat.m in Sources */,
 				99E727FD1BDBB91D00771161 /* UIImageView+WebCache.m in Sources */,
 				48377B901C1027F5007B8C21 /* DemoVCWithXib.m in Sources */,
@@ -449,7 +579,6 @@
 				99E727F31BDBB91D00771161 /* SDWebImageDecoder.m in Sources */,
 				99E727FB1BDBB91D00771161 /* UIImage+WebP.m in Sources */,
 				99E727F61BDBB91D00771161 /* SDWebImageManager.m in Sources */,
-				9901410C1AC9420E00D0D74F /* SDCycleScrollView.m in Sources */,
 				99E727F11BDBB91D00771161 /* SDImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,6 +692,7 @@
 		};
 		9900D1921ABEB2490077A6CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1411ABD2022E087127963DE7 /* Pods-SDCycleScrollView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -580,6 +710,7 @@
 		};
 		9900D1931ABEB2490077A6CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F59992F8558612D9AE4F0D5 /* Pods-SDCycleScrollView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -596,6 +727,7 @@
 		};
 		9900D1951ABEB2490077A6CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BB93F76BDCB07E8F6B81467 /* Pods-SDCycleScrollViewTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -616,6 +748,7 @@
 		};
 		9900D1961ABEB2490077A6CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30ADE5F06A851E157D19BBF5 /* Pods-SDCycleScrollViewTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

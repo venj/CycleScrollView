@@ -11,9 +11,10 @@ import UIKit
 class PhotoCell: UICollectionViewCell {
     var imageView : UIImageView? {
         didSet {
-            guard let imageView = imageView else { return }
-            if !contentView.subviews.contains(imageView) {
-                contentView.addSubview(imageView)
+            if let imageView = imageView {
+                if !contentView.subviews.contains(imageView) {
+                    contentView.addSubview(imageView)
+                }
             }
         }
     }
@@ -71,7 +72,7 @@ class PhotoCell: UICollectionViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        imageView!.frame = bounds // imageView should not be nil
+        imageView?.frame = bounds // imageView should not be nil
         titleLabel?.frame = CGRect(x: 0.0, y: sd_height - titleLabelHeight, width: sd_width, height: titleLabelHeight)
     }
 }
