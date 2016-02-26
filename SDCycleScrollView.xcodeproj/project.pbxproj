@@ -15,8 +15,8 @@
 		2530D6F51C7ED73200D57AFC /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530D6F41C7ED73200D57AFC /* PageControl.swift */; };
 		256576431C80853E00FA445F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256576421C80853E00FA445F /* AppDelegate.swift */; };
 		256576501C808B5600FA445F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565764F1C808B5600FA445F /* ViewController.swift */; };
-		48377B901C1027F5007B8C21 /* DemoVCWithXib.m in Sources */ = {isa = PBXBuildFile; fileRef = 48377B8E1C1027F5007B8C21 /* DemoVCWithXib.m */; };
-		48377B911C1027F5007B8C21 /* DemoVCWithXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48377B8F1C1027F5007B8C21 /* DemoVCWithXib.xib */; };
+		256576531C809B9B00FA445F /* DemoXIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256576511C809B9B00FA445F /* DemoXIBViewController.swift */; };
+		256576541C809B9B00FA445F /* DemoXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256576521C809B9B00FA445F /* DemoXIBViewController.xib */; };
 		4855B1941B09CBA500AA0788 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4855B1931B09CBA500AA0788 /* placeholder@2x.png */; };
 		485B54771C3A196C001944FA /* pageControlDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 485B54731C3A196C001944FA /* pageControlDot@2x.png */; };
 		485B54781C3A196C001944FA /* pageControlDot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 485B54741C3A196C001944FA /* pageControlDot@3x.png */; };
@@ -56,10 +56,9 @@
 		2530D6F41C7ED73200D57AFC /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		256576421C80853E00FA445F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2565764F1C808B5600FA445F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		256576511C809B9B00FA445F /* DemoXIBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoXIBViewController.swift; path = SDCycleScrollView/DemoXIBViewController.swift; sourceTree = SOURCE_ROOT; };
+		256576521C809B9B00FA445F /* DemoXIBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DemoXIBViewController.xib; path = SDCycleScrollView/DemoXIBViewController.xib; sourceTree = SOURCE_ROOT; };
 		30ADE5F06A851E157D19BBF5 /* Pods-SDCycleScrollViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDCycleScrollViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDCycleScrollViewTests/Pods-SDCycleScrollViewTests.release.xcconfig"; sourceTree = "<group>"; };
-		48377B8D1C1027F5007B8C21 /* DemoVCWithXib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoVCWithXib.h; sourceTree = "<group>"; };
-		48377B8E1C1027F5007B8C21 /* DemoVCWithXib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoVCWithXib.m; sourceTree = "<group>"; };
-		48377B8F1C1027F5007B8C21 /* DemoVCWithXib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoVCWithXib.xib; sourceTree = "<group>"; };
 		4855B1931B09CBA500AA0788 /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
 		485B54731C3A196C001944FA /* pageControlDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControlDot@2x.png"; sourceTree = "<group>"; };
 		485B54741C3A196C001944FA /* pageControlDot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControlDot@3x.png"; sourceTree = "<group>"; };
@@ -114,27 +113,8 @@
 		48377B8A1C10265E007B8C21 /* DemoVC */ = {
 			isa = PBXGroup;
 			children = (
-				48377B8C1C102758007B8C21 /* xib的demo */,
-				48377B8B1C102758007B8C21 /* 纯代码demo */,
 			);
 			path = DemoVC;
-			sourceTree = "<group>";
-		};
-		48377B8B1C102758007B8C21 /* 纯代码demo */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "纯代码demo";
-			sourceTree = "<group>";
-		};
-		48377B8C1C102758007B8C21 /* xib的demo */ = {
-			isa = PBXGroup;
-			children = (
-				48377B8D1C1027F5007B8C21 /* DemoVCWithXib.h */,
-				48377B8E1C1027F5007B8C21 /* DemoVCWithXib.m */,
-				48377B8F1C1027F5007B8C21 /* DemoVCWithXib.xib */,
-			);
-			path = "xib的demo";
 			sourceTree = "<group>";
 		};
 		9900D1651ABEB2490077A6CB = {
@@ -164,6 +144,8 @@
 				9900D1971ABEB2C70077A6CB /* Lib */,
 				256576421C80853E00FA445F /* AppDelegate.swift */,
 				2565764F1C808B5600FA445F /* ViewController.swift */,
+				256576511C809B9B00FA445F /* DemoXIBViewController.swift */,
+				256576521C809B9B00FA445F /* DemoXIBViewController.xib */,
 				9900D17E1ABEB2490077A6CB /* Images.xcassets */,
 				9900D1801ABEB2490077A6CB /* LaunchScreen.xib */,
 				9900D1711ABEB2490077A6CB /* Supporting Files */,
@@ -339,11 +321,11 @@
 				999C10981AC14F3B00C11CDB /* h3.jpg in Resources */,
 				485B54771C3A196C001944FA /* pageControlDot@2x.png in Resources */,
 				99A732631B24AB660033E878 /* 005.jpg in Resources */,
+				256576541C809B9B00FA445F /* DemoXIBViewController.xib in Resources */,
 				9900D1821ABEB2490077A6CB /* LaunchScreen.xib in Resources */,
 				485B54781C3A196C001944FA /* pageControlDot@3x.png in Resources */,
 				4855B1941B09CBA500AA0788 /* placeholder@2x.png in Resources */,
 				485B547A1C3A196C001944FA /* pageControlCurrentDot@2x.png in Resources */,
-				48377B911C1027F5007B8C21 /* DemoVCWithXib.xib in Resources */,
 				9900D17F1ABEB2490077A6CB /* Images.xcassets in Resources */,
 				485B54791C3A196C001944FA /* pageControlCurrentDot@3x.png in Resources */,
 				9900D1A01ABEB41B0077A6CB /* h2.jpg in Resources */,
@@ -460,9 +442,9 @@
 				256576501C808B5600FA445F /* ViewController.swift in Sources */,
 				256576431C80853E00FA445F /* AppDelegate.swift in Sources */,
 				2530D6EA1C7DDC5A00D57AFC /* PhotoCell.swift in Sources */,
+				256576531C809B9B00FA445F /* DemoXIBViewController.swift in Sources */,
 				2530D6F11C7EA77D00D57AFC /* AnimatedDotView.swift in Sources */,
 				250943DD1C7FFB4200C5A62D /* CycleScrollView.swift in Sources */,
-				48377B901C1027F5007B8C21 /* DemoVCWithXib.m in Sources */,
 				2530D6E81C7DD85200D57AFC /* UIViewExtension.swift in Sources */,
 				2530D6EF1C7EA4CA00D57AFC /* DotView.swift in Sources */,
 				2530D6F51C7ED73200D57AFC /* PageControl.swift in Sources */,

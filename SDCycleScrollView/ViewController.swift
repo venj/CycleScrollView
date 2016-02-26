@@ -12,6 +12,7 @@ class ViewController: UIViewController, CycleScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         view.backgroundColor = UIColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 0.99)
         let backgroundView = UIImageView(image: UIImage(named: "005.jpg"))
         backgroundView.frame = view.bounds
@@ -65,7 +66,7 @@ class ViewController: UIViewController, CycleScrollViewDelegate {
 
     func cycleScrollView(cycleScrollView: CycleScrollView, didSelectItemAtIndex index: Int) {
         print("------  You selected picture \(index)")
-        navigationController?.pushViewController(DemoVCWithXib(), animated: true)
+        navigationController?.pushViewController(DemoXIBViewController(), animated: true)
     }
 
 }

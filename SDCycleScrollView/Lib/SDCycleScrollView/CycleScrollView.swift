@@ -116,8 +116,7 @@ class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
             insertSubview(backgroundImageView, belowSubview: mainView!)
         }
     }
-    private var retryCount : Int = 2
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
