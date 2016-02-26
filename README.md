@@ -6,14 +6,15 @@ Based on [SDCycleScrollView](https://github.com/gsdios/SDCycleScrollView), [comm
 
 ## Current Work
 
-Convert the whole project to Swift
+Make project compatible with Carthage
 
 ## TODO
 
-1. More Swifty ;) 
-2. Replace the dependency of SDWebImage
+1. <del>More Swifty ;) </del>
+2. <del>Replace the dependency of SDWebImage</del>
 3. Carthage compatibility
 4. Create a new PhotoBrowser base on this project
+5. Make API compatible with Objective-C
 
 ## License
 
