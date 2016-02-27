@@ -9,13 +9,13 @@
 import UIKit
 
 @objc
-protocol PageControlDelegate {
+public protocol PageControlDelegate {
     optional func pageControl(pageControl: PageControl?, didSelectPageAtIndex index: Int)
 }
 
-class PageControl : UIControl {
-    var dotViewClass : AnyClass?
-    var dotImage : UIImage? {
+public class PageControl : UIControl {
+    public var dotViewClass : AnyClass?
+    public var dotImage : UIImage? {
         didSet {
             resetDotViews()
             if dotImage != nil {
@@ -24,27 +24,27 @@ class PageControl : UIControl {
             dotViewClass = nil
         }
     }
-    var currentDotImage : UIImage? {
+    public var currentDotImage : UIImage? {
         didSet {
             resetDotViews()
             dotViewClass = nil
         }
     }
 
-    var dotSize : CGSize = CGSize(width: 8, height: 8)
-    var dotColor : UIColor?
-    var spacingBetweenDots : CGFloat = 8.0 {
+    public var dotSize : CGSize = CGSize(width: 8, height: 8)
+    public var dotColor : UIColor?
+    public var spacingBetweenDots : CGFloat = 8.0 {
         didSet {
             resetDotViews()
         }
     }
-    weak var delegate : PageControlDelegate?
-    var numberOfPages : Int = 0 {
+    public weak var delegate : PageControlDelegate?
+    public var numberOfPages : Int = 0 {
         didSet {
             resetDotViews()
         }
     }
-    var currentPage : Int = 0 {
+    public var currentPage : Int = 0 {
         willSet {
             changeActivity(false, atIndex: currentPage)
         }
@@ -52,17 +52,17 @@ class PageControl : UIControl {
             changeActivity(true, atIndex: currentPage)
         }
     }
-    var hidesForSinglePage : Bool = false
-    var shouldResizeFromCenter : Bool = true
+    public var hidesForSinglePage : Bool = false
+    public var shouldResizeFromCenter : Bool = true
 
-    var dots : [UIView] = []
+    public var dots : [UIView] = []
 
-    init() {
+    public init() {
         super.init(frame: CGRectZero)
         setup()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
@@ -78,7 +78,7 @@ class PageControl : UIControl {
 
     //Mark: - Touch event
 
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         guard let view = touches.first?.view else { return }
         if view != self {
             let index = dots.indexOf(view)?.distanceTo(dots.startIndex)
@@ -88,7 +88,7 @@ class PageControl : UIControl {
 
     //Mark: - Layout
 
-    override func sizeToFit() {
+    override public func sizeToFit() {
         updateFrame(true)
     }
 
@@ -104,7 +104,7 @@ class PageControl : UIControl {
         resetDotViews()
     }
 
-    func sizeForNumberOfPages(pageCount: Int) -> CGSize {
+    public func sizeForNumberOfPages(pageCount: Int) -> CGSize {
         return CGSize(width: (dotSize.width + spacingBetweenDots) * CGFloat(pageCount) - spacingBetweenDots, height: dotSize.height)
     }
 

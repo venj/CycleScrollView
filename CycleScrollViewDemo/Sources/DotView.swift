@@ -8,18 +8,18 @@
 
 import UIKit
 
-class DotView : UIView {
-    init() {
+public class DotView : UIView {
+    public init() {
         super.init(frame: CGRectZero)
         setup()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
 
-    required override init(frame: CGRect) {
+    required public override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
@@ -31,7 +31,7 @@ class DotView : UIView {
         layer.borderWidth = 2.0
     }
 
-    func changeActivityState(active: Bool) {
+    public func changeActivityState(active: Bool) {
         backgroundColor = active ? UIColor.whiteColor() : UIColor.clearColor()
     }
 }

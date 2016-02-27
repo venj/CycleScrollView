@@ -8,8 +8,8 @@
 
 import UIKit
 
-class PhotoCell: UICollectionViewCell {
-    var imageView : UIImageView? {
+public class PhotoCell: UICollectionViewCell {
+    public var imageView : UIImageView? {
         didSet {
             if let imageView = imageView {
                 if !contentView.subviews.contains(imageView) {
@@ -18,37 +18,37 @@ class PhotoCell: UICollectionViewCell {
             }
         }
     }
-    var title : String? {
+    public var title : String? {
         didSet {
             guard let title = title else { return }
             titleLabel?.text = "   \(title)"
         }
     }
     
-    var titleLabelTextColor : UIColor? {
+    public var titleLabelTextColor : UIColor? {
         didSet {
             titleLabel?.textColor = titleLabelTextColor
         }
     }
 
-    var titleLabelTextFont : UIFont? {
+    public var titleLabelTextFont : UIFont? {
         didSet {
             titleLabel?.font = titleLabelTextFont
         }
     }
 
-    var titleLabelBackgroundColor : UIColor? {
+    public var titleLabelBackgroundColor : UIColor? {
         didSet {
             titleLabel?.backgroundColor = titleLabelBackgroundColor
         }
     }
 
-    var titleLabelHeight : CGFloat = 0.0
-    var hasConfigured : Bool = false
+    public var titleLabelHeight : CGFloat = 0.0
+    public var hasConfigured : Bool = false
 
     private var titleLabel : UILabel?
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupViews()
     }
@@ -64,13 +64,13 @@ class PhotoCell: UICollectionViewCell {
         contentView.addSubview(titleLabel!)
     }
 
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         imageView?.frame = bounds // imageView should not be nil
         titleLabel?.frame = CGRect(x: 0.0, y: sd_height - titleLabelHeight, width: sd_width, height: titleLabelHeight)
     }
 
-    override func prepareForReuse() {
+    override public func prepareForReuse() {
         super.prepareForReuse()
         title = nil
     }

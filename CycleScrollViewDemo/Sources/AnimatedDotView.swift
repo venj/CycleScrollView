@@ -8,34 +8,34 @@
 
 import UIKit
 
-class AnimatedDotView: DotView {
-    var dotColor : UIColor? = UIColor.whiteColor() {
+public class AnimatedDotView: DotView {
+    public var dotColor : UIColor? = UIColor.whiteColor() {
         didSet {
             guard let dotColor = dotColor else { return }
             layer.borderColor  = dotColor.CGColor
         }
     }
 
-    var animateDuration : NSTimeInterval = 1.0
+    public var animateDuration : NSTimeInterval = 1.0
     
-    override init() {
+    override public init() {
         super.init(frame: CGRectZero)
         setup()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
 
-    required init(frame: CGRect) {
+    required public init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
 
     private func setup() { }
 
-    override func changeActivityState(active: Bool) {
+    override public func changeActivityState(active: Bool) {
         if active {
             animateToActiveState()
         }

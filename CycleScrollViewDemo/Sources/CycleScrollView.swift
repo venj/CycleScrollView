@@ -10,56 +10,56 @@ import UIKit
 import Kingfisher
 
 @objc
-enum CycleScrollViewPageContolAliment : Int {
+public enum CycleScrollViewPageContolAliment : Int {
     case Right
     case Center
 }
 
 @objc
-enum CycleScrollViewPageContolStyle : Int {
+public enum CycleScrollViewPageContolStyle : Int {
     case Classic
     case Animated
     case None
 }
 
 @objc
-protocol CycleScrollViewDelegate {
+public protocol CycleScrollViewDelegate {
     optional func cycleScrollView(cycleScrollView: CycleScrollView, didSelectItemAtIndex index: Int)
     optional func cycleScrollView(cycleScrollView: CycleScrollView, didScrollToIndex index: Int)
 }
 
 private let ID = "cycleCell"
 
-class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDelegate {
-    var titles : [String]?
-    var autoScrollTimeInterval : NSTimeInterval? {
+public class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDelegate {
+    public var titles : [String]?
+    public var autoScrollTimeInterval : NSTimeInterval? {
         didSet {
             doneSettingAutoScroll()
         }
     }
-    var infiniteLoop : Bool = true
-    var autoScroll : Bool = true
-    weak var delegate : CycleScrollViewDelegate?
-    var clickItemOperation : ((Int) -> Void)?
-    var imageViewContentMode : UIViewContentMode = .ScaleToFill
-    var placeholderImage : UIImage? {
+    public var infiniteLoop : Bool = true
+    public var autoScroll : Bool = true
+    public weak var delegate : CycleScrollViewDelegate?
+    public var clickItemOperation : ((Int) -> Void)?
+    public var imageViewContentMode : UIViewContentMode = .ScaleToFill
+    public var placeholderImage : UIImage? {
         didSet {
             backgroundImageView.image = placeholderImage
         }
     }
-    var showPageControl : Bool = true {
+    public var showPageControl : Bool = true {
         didSet {
             pageControl?.hidden = !showPageControl
         }
     }
-    var hidesForSinglePage : Bool = true
-    var pageControlStyle : CycleScrollViewPageContolStyle = .Classic {
+    public var hidesForSinglePage : Bool = true
+    public var pageControlStyle : CycleScrollViewPageContolStyle = .Classic {
         didSet {
             setupPageControl()
         }
     }
-    var pageControlAliment : CycleScrollViewPageContolAliment = .Center
-    var pageControlDotSize : CGSize = CGSize(width: 10, height: 10) {
+    public var pageControlAliment : CycleScrollViewPageContolAliment = .Center
+    public var pageControlDotSize : CGSize = CGSize(width: 10, height: 10) {
         didSet {
             setupPageControl()
             if let p = pageControl as? PageControl {
@@ -67,7 +67,7 @@ class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
             }
         }
     }
-    var currentPageDotColor : UIColor = UIColor.whiteColor() {
+    public var currentPageDotColor : UIColor = UIColor.whiteColor() {
         didSet {
             if let p = pageControl as? PageControl {
                 p.dotColor = currentPageDotColor
@@ -77,27 +77,27 @@ class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
             }
         }
     }
-    var pageDotColor : UIColor = UIColor.lightGrayColor() {
+    public var pageDotColor : UIColor = UIColor.lightGrayColor() {
         didSet {
             if let p = pageControl as? UIPageControl {
                 p.pageIndicatorTintColor = currentPageDotColor
             }
         }
     }
-    var currentPageDotImage : UIImage? {
+    public var currentPageDotImage : UIImage? {
         didSet {
             doneSettingCurrentPageDotImage()
         }
     }
-    var pageDotImage : UIImage? {
+    public var pageDotImage : UIImage? {
         didSet {
             doneSettingPageDotImage()
         }
     }
-    var titleLabelTextColor : UIColor = UIColor.whiteColor()
-    var titleLabelTextFont : UIFont = UIFont.systemFontOfSize(14.0)
-    var titleLabelBackgroundColor : UIColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5)
-    var titleLabelHeight : CGFloat = 30.0
+    public var titleLabelTextColor : UIColor = UIColor.whiteColor()
+    public var titleLabelTextFont : UIFont = UIFont.systemFontOfSize(14.0)
+    public var titleLabelBackgroundColor : UIColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5)
+    public var titleLabelHeight : CGFloat = 30.0
 
     private var mainView: UICollectionView?
     private var flowLayout: UICollectionViewFlowLayout?
@@ -117,7 +117,7 @@ class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
         }
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
@@ -133,7 +133,7 @@ class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
         doneSettingAutoScroll()
     }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         setup()
     }
 
@@ -289,7 +289,7 @@ class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
         CycleScrollView.clearImagesCache()
     }
 
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         flowLayout?.itemSize = frame.size
         guard let mainView = mainView else {
@@ -325,11 +325,11 @@ class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
     }
 
     //MARK: - UICollectionViewDataSource
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return totalItemsCount
     }
 
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    public func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ID, forIndexPath: indexPath) as! PhotoCell
         let itemIndex = indexPath.item % imagePaths.count
         let imagePath = imagePaths[itemIndex]
@@ -358,7 +358,7 @@ class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
         return cell
     }
 
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    public func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let i = indexPath.item % imagePaths.count
         delegate?.cycleScrollView?(self, didSelectItemAtIndex: i)
         clickItemOperation?(i)
@@ -366,7 +366,7 @@ class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
 
     //MARK: - UIScrollViewDelegate
 
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    public func scrollViewDidScroll(scrollView: UIScrollView) {
         if imagePaths.count == 0 { return }
         guard let mainView = mainView else { fatalError("mainView is not initialized correctly.") }
         let itemIndex = Int((scrollView.contentOffset.x + mainView.sd_width / 2.0) / mainView.sd_width)
@@ -380,20 +380,20 @@ class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
         }
     }
 
-    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+    public func scrollViewWillBeginDragging(scrollView: UIScrollView) {
         if autoScroll {
             timer?.invalidate()
             timer = nil
         }
     }
 
-    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    public func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if autoScroll {
             setupTimer()
         }
     }
 
-    func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
+    public func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
         if imagePaths.count == 0 { return }
         guard let mainView = mainView else { fatalError("mainView is not initialized correctly.") }
         let itemIndex = Int((scrollView.contentOffset.x + mainView.sd_width / 2.0) / mainView.sd_width)

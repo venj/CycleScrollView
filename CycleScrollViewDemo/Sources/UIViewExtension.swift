@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UIView {
-    var sd_width : CGFloat {
+    public var sd_width : CGFloat {
         get {
             return frame.size.width
         }
@@ -18,7 +18,7 @@ public extension UIView {
         }
     }
 
-    var sd_height : CGFloat {
+    public var sd_height : CGFloat {
         get {
             return frame.size.height
         }
@@ -27,7 +27,7 @@ public extension UIView {
         }
     }
 
-    var sd_x : CGFloat {
+    public var sd_x : CGFloat {
         get {
             return frame.origin.x
         }
@@ -36,7 +36,7 @@ public extension UIView {
         }
     }
 
-    var sd_y : CGFloat {
+    public var sd_y : CGFloat {
         get {
             return frame.origin.y
         }
