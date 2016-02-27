@@ -101,7 +101,7 @@ public class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionVi
 
     private var mainView: UICollectionView?
     private var flowLayout: UICollectionViewFlowLayout?
-    var imagePaths : [String] = [] {
+    public var imagePaths : [String] = [] {
         didSet {
             doneSettingImagePaths()
         }
