@@ -16,7 +16,7 @@ github "venj/CycleScrollView" ~> 1.0.0
 
 ## Current Work
 
-Make project compatible with Swift package manager
+Make a PhotoBrowser based on CycleScrollView.
 
 ## TODO
 
