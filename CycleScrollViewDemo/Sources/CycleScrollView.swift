@@ -122,7 +122,7 @@ public class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionVi
         setup()
     }
 
-    init(frame:CGRect, delegate: CycleScrollViewDelegate? = nil, placeholderImage: UIImage? = nil, shouldInfiniteLoop infiniteLoop: Bool = true, imagesPaths: [String] = []) {
+    public init(frame:CGRect, delegate: CycleScrollViewDelegate? = nil, placeholderImage: UIImage? = nil, shouldInfiniteLoop infiniteLoop: Bool = true, imagesPaths: [String] = []) {
         super.init(frame: frame)
         self.infiniteLoop = infiniteLoop
         self.imagePaths = imagesPaths
