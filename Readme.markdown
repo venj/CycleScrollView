@@ -23,10 +23,9 @@ Make project compatible with Swift package manager
 1. <del>More Swifty ;) </del>
 2. <del>Replace the dependency of SDWebImage</del>
 3. <del>Carthage compatibility</del>
-4. Swift package manager compatibility
-5. Create a new PhotoBrowser base on this project
-6. Make API compatible with Objective-C (API compatibility with original SDCycleScrollView)
-7. Code compatibility with Swift 2.2 (when its finally released.)
+4. Create a new PhotoBrowser base on this project
+5. Make API compatible with Objective-C (API compatibility with original SDCycleScrollView)
+6. Code compatibility with Swift 2.2 (when its finally released.)
 
 ## License
 
