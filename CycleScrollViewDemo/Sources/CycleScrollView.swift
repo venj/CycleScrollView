@@ -98,6 +98,12 @@ public class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionVi
     public var titleLabelTextFont : UIFont = UIFont.systemFontOfSize(14.0)
     public var titleLabelBackgroundColor : UIColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5)
     public var titleLabelHeight : CGFloat = 30.0
+    public var trustedHosts : Set<String>? {
+        didSet {
+            ImageDownloader.defaultDownloader.trustedHosts = trustedHosts
+        }
+    }
+    public var showDownloadIndicator : Bool = true
 
     private var mainView: UICollectionView?
     private var flowLayout: UICollectionViewFlowLayout?
@@ -131,6 +137,7 @@ public class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionVi
         setup()
         doneSettingImagePaths()
         doneSettingAutoScroll()
+        clearCache()
     }
 
     override public func awakeFromNib() {
@@ -334,6 +341,7 @@ public class CycleScrollView: UIView, UICollectionViewDataSource, UICollectionVi
         let itemIndex = indexPath.item % imagePaths.count
         let imagePath = imagePaths[itemIndex]
         if imagePath.hasPrefix("http://") || imagePath.hasPrefix("https://") {
+            cell.imageView?.kf_showIndicatorWhenLoading = showDownloadIndicator
             cell.imageView?.kf_setImageWithURL(NSURL(string: imagePath)!, placeholderImage: placeholderImage)
         }
         else {

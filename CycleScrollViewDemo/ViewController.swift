@@ -45,6 +45,7 @@ class ViewController: UIViewController, CycleScrollViewDelegate {
         cycleScrollView2.pageControlAliment = .Right
         cycleScrollView2.titles = titles
         cycleScrollView2.currentPageDotColor = UIColor.whiteColor()
+        cycleScrollView2.trustedHosts = ["venj.me"]
         containerView.addSubview(cycleScrollView2)
 
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(0.3 * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) {
@@ -59,6 +60,7 @@ class ViewController: UIViewController, CycleScrollViewDelegate {
         cycleScrollView3.currentPageDotImage = UIImage(named: "pageControlCurrentDot")
         cycleScrollView3.pageDotImage = UIImage(named: "pageControlDot")
         cycleScrollView3.imagePaths = imageURLStrings
+        cycleScrollView3.trustedHosts = ["venj.me"]
         containerView.addSubview(cycleScrollView3)
     }
 
